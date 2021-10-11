@@ -45,7 +45,7 @@ while True:
         LekcjeIndex = LekcjeIndex + 1
         i = 1
 # -------------------------------------------------
-# testowe pokazuje indexy oraz czas oraz usypia program na sekunde        
+# debug        
     print(i)    
     print("Current Time =", current_time)
     sleep(1)
