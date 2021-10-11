@@ -24,7 +24,7 @@ while True:
     current_time = czas.strftime("%H:%M:%S") # formatowanie godziny
 
     # petla sprwadzajaca index 
-    if i == 1 and current_time > Przerwy[PrzerwyIndex] and current_time < Lekcje[LekcjeIndex]:   
+    if i == 1 and current_time > Przerwy[PrzerwyIndex] and current_time < Lekcje[LekcjeIndex]:   # sprawdza aktualna pozycje w petli i sprawdza czy aktualna godzina jest przed godzina lekcji
         print(Przerwy[PrzerwyIndex]) 
         i = 2        
         os.startfile(d) # odpalamy losowy plik z danej sciezki
@@ -39,7 +39,7 @@ while True:
 # -------------------------------------------------
 
     #wylaczamy program gdy skonczy sie przerwa
-    if i == 3 and current_time > Lekcje[LekcjeIndex]:
+    if i == 3 and current_time > Lekcje[LekcjeIndex]: # sprawdza aktualna pozycje w petli i sprawdza czy aktualna godzina jest przed godzina lekcji
         os.system('taskkill /f /im wmplayer.exe')  # wylacza program
         PrzerwyIndex = PrzerwyIndex + 1 # zmienia index przerwy oraz lekcji na nastepny, co umozliwia sledzenie ktora lekcja jest
         LekcjeIndex = LekcjeIndex + 1
