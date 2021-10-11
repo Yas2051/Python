@@ -47,5 +47,5 @@ while True:
 # -------------------------------------------------
 # debug        
     print(i)    
-    print("Current Time =", current_time)
+    print("Aktualna Godzina =", current_time)
     sleep(1)
