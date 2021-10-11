@@ -2,7 +2,7 @@ import os, random
 from datetime import datetime
 from time import sleep, strftime
 
-sciezka="C:\\Users\\mateu\\Desktop\\1\\test" # sciezka plikow
+sciezka="C:\\Users\\mateu\\Desktop\\1\\test\\" # sciezka plikow
 # -------------------------------------------------
 pliki=os.listdir(sciezka) # lista plikow w sciezce
 d=random.choice(pliki) # wybieramy losowy plik z sciezki
